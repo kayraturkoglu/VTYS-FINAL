@@ -126,7 +126,7 @@ BEGIN
 END;
 $$;
 
--- 4.3. BORÇ ÖDEME (YENİ - 3. PROSEDÜR)
+-- 4.3. BORÇ ÖDEME (3. PROSEDÜR)
 CREATE OR REPLACE PROCEDURE sp_BorcOde(p_UyeID INTEGER, p_Miktar NUMERIC)
 LANGUAGE plpgsql
 AS $$
@@ -150,3 +150,4 @@ BEGIN
     VALUES ('UYE', 'UPDATE', 'Borç ödendi. UyeID: ' || p_UyeID || ', Tutar: ' || p_Miktar);
 END;
 $$;
+
